@@ -1,14 +1,14 @@
-var cacheName = 'my-cache'
+var cacheName = 'my-cache';
 var cacheList = ['index.html',
   'main.css',
   'youhun.jpg']
 self.addEventListener('install',e =>{
   e.waitUntil(
-    caches.open(cacheStorageKey)
+    caches.open(cacheName)
     .then(cache => cache.addAll(cacheList))
     .then(() => self.skipWaiting())
-  )
-})
+  );
+});
 // 监听service worker fetch
 self.addEventListener('fetch', function (event) {
   event.respondWith(
@@ -24,4 +24,4 @@ self.addEventListener('fetch', function (event) {
         }
     )
   );
-})
+});
