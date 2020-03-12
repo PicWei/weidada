@@ -1,5 +1,4 @@
 var cacheName = 'hello-pwa';
-
 self.addEventListener('install', event => {
     event.waitUntil(
         caches.open(cacheName)
