@@ -2,14 +2,13 @@ var cacheName = 'my-cache'
 var cacheList = ['index.html',
   'main.css',
   'youhun.jpg']
-self.addEventListener('install', function(event) {
-  event.waitUntil(
-    // 安装成功后向caches中存入需要缓存的文件  
-    caches.open(cacheName).then(function (cache) {
-        return cache.addAll(cacheList)
-    })
+self.addEventListener('install',e =>{
+  e.waitUntil(
+    caches.open(cacheStorageKey)
+    .then(cache => cache.addAll(cacheList))
+    .then(() => self.skipWaiting())
   )
-});
+})
 // 监听service worker fetch
 self.addEventListener('fetch', function (event) {
   event.respondWith(
