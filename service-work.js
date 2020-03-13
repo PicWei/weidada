@@ -3,8 +3,7 @@ var cacheName = 'gotop-06'
 var cacheList = [
   "/",
   "index.html",
-  "main.css",
-  "youhun.jpg"
+  "dist/app.js",
 ]
 
 // Service Worker 注册完成事件，写入缓存
