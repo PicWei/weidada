@@ -12,12 +12,12 @@
       "type": "image/png"
     },
 	{
-	"src": "img/logo.jpg",
+	"src": "img/logo.png",
       "sizes": "72x72",
       "type": "image/png"
 	},
 	{
-		"src": "img/logo_2.jpg",
+		"src": "img/logo_2.png",
         "sizes": "96x96",
         "type": "image/png"
 	}
