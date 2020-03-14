@@ -1,8 +1,8 @@
 {
   "name": "一个PWA示例",
   "short_name": "PWA示例",
-  "start_url": ".",
-  "display": "fullscreen",
+  "start_url": "/",
+  "display": "standalone",
   "background_color": "#000",
   "theme_color": "#3eaf7c",
   "icons":[
