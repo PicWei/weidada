@@ -3,7 +3,7 @@
   "short_name": "PWA示例",
   "description": "PWA最简单例子。",
   "orientation": "portrait",
-  "start_url": "/",
+  "start_url": "/index.html",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#3eaf7c",
