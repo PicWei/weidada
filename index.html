@@ -19,8 +19,17 @@
       console.log('支持sw:',registartion.scope)
     })
   }
-  window.addEventListener('beforeinstallprompt', event => {
-    event.userChoice.then(result =>{console.log(result.outcome)})
-  })
+  window.addEventListener('beforeinstallprompt', function (e) {
+    // beforeinstallprompt event fired
+
+    e.userChoice.then(function (choiceResult) {
+        if (choiceResult.outcome === 'dismissed') {
+            console.log('用户取消安装应用');
+        }
+        else {
+            console.log('用户安装了应用');
+        }
+    });
+});
 </script>
 </html>
