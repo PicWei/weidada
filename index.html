@@ -19,17 +19,17 @@
       console.log('支持sw:',registartion.scope)
     })
   }
-  window.addEventListener('beforeinstallprompt', function (e) {
-    // beforeinstallprompt event fired
+//   window.addEventListener('beforeinstallprompt', function (e) {
+//     // beforeinstallprompt event fired
 
-    e.userChoice.then(function (choiceResult) {
-        if (choiceResult.outcome === 'dismissed') {
-            console.log('用户取消安装应用');
-        }
-        else {
-            console.log('用户安装了应用');
-        }
-    });
-});
+//     e.userChoice.then(function (choiceResult) {
+//         if (choiceResult.outcome === 'dismissed') {
+//             console.log('用户取消安装应用');
+//         }
+//         else {
+//             console.log('用户安装了应用');
+//         }
+//     });
+// });
 </script>
 </html>
